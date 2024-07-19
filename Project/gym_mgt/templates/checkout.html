@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Checkout-Track Tone</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/checkout.css' %}" />
+  </head>
+  <body>
+    <form method="post" action="{% url 'checkout' %}">
+      <div class="container">
+        <div class="header">
+          <div class="log">
+            <img src="{% static 'images/logo2c.png' %}" alt="" class="logo" />
+            <h3 class="title">TRACK TONE</h3>
+          </div>
+
+          <div class="check-title">CHECK OUT</div>
+
+          <div class="add-more">
+            <a href="{% url 'store' %}"> Add More! </a>
+          </div>
+        </div>
+
+        <div class="detail-container">
+          <div class="shipment-detail">
+            <div class="del-title">Delivery Address</div>
+            <div class="first-row">
+              <input
+                type="text"
+                class="input-box"
+                id="name"
+                placeholder="Name"
+                name="name"
+                required
+              />
+
+              <input
+                type="text"
+                class="input-box"
+                id="phno"
+                placeholder="Mobile Number"
+                name="phno"
+                required
+              />
+            </div>
+
+            <div class="second-row">
+              <input
+                type="text"
+                class="input-box"
+                id="flatno"
+                placeholder="Flat No,Block no"
+                name="flatno"
+                required
+              />
+
+              <input
+                type="text"
+                class="input-box"
+                id="pincode"
+                placeholder="Pincode"
+                name="pincode"
+                required
+              />
+            </div>
+
+            <div class="third-row">
+              <textarea
+                id="ad"
+                cols="105"
+                rows="10"
+                class="ad"
+                placeholder="Address"
+                name="ad"
+                required
+              ></textarea>
+            </div>
+
+            <div class="fourth-row">
+              <input
+                type="text"
+                class="input-box"
+                id="state"
+                placeholder="State"
+                name="state"
+                required
+              />
+
+              <input
+                type="text"
+                class="input-box"
+                id="city"
+                placeholder="City/District"
+                name="city"
+                required
+              />
+            </div>
+
+            <div class="fifth-row">
+              <input
+                type="text"
+                class="input-box"
+                id="landmark"
+                placeholder="Landmark (Optional)"
+                name="landmark"
+              />
+
+              <input
+                type="text"
+                class="input-box"
+                id="aphno"
+                placeholder="Alternate Phone (Optional)"
+                name="aphno"
+              />
+            </div>
+            <div id="productsList"></div>
+            <div id="totalValue"></div>
+          </div>
+
+          <div class="btn-container">
+            {% csrf_token %}
+        
+              <button class="place-order">Place Order</button>
+      
+          </div>
+        </div>
+      </div>
+    </form>
+    <script>
+      var urlParams = new URLSearchParams(window.location.search);
+          var productsJSON = urlParams.get('products');
+          var totalValueEncoded = urlParams.get('total');
+
+          var products = JSON.parse(decodeURIComponent(productsJSON));
+          var totalValue = decodeURIComponent(totalValueEncoded);
+
+          // Display products data
+          var productsDiv = document.getElementById('productsList');
+          products.forEach(function(product) {
+              var div = document.createElement('div');
+              div.textContent = `ID: ${product.id}, Name: ${product.name}, Price: $${product.price}, Quantity: ${product.quantity}`;
+              productsDiv.appendChild(div);
+          });
+
+          // Display total value
+          var totalDiv = document.getElementById('totalValue');
+          totalDiv.textContent = 'Total: $' + totalValue;
+    </script>
+  </body>
+</html>

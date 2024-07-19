@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato',sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: black;
+
+}
+
+.logo{
+    /* position: absolute; */
+    height: 55px;
+    width: 60px;
+}
+
+.log{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    color: white;
+}
+
+.check-title{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    /* margin-right: 675px; */
+}
+
+.add-more{
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.shipment-detail{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 500px;
+    width: 800px;
+    border-radius: 10px;
+    background-color: rgba(211, 231, 250, 0.748);
+    border: 1px solid black;
+    /* background-color: red; */
+}
+
+.del-title{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.input-box{
+    width: 391px;
+    height: 50px;
+    margin-top: 15px;
+    /* margin-bottom: 5px; */
+    margin-left: 4px;
+}
+
+.input-box::placeholder{
+    font-weight: 700;
+}
+
+textarea{
+    font-weight: 700;
+    margin-top: 15px;
+    margin-left: 4px;
+    resize: none;
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.place-order{
+    margin-top: 20px;
+    height: 40px;
+    width: 350px;
+    cursor: pointer;
+}
