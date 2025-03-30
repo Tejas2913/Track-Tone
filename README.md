@@ -12,7 +12,8 @@ Track Tone is a web-based gym management application that facilitates workout an
 ### Features
 ✅ **Browse Workout Plans:** Trainees can explore available workout and diet plans.
 
-🛒 **E-commerce:** Users can browse and purchase gym products like supplements and equipment. The product list is loaded dynamically using a JavaScript array, meaning the **Super User cannot directly manage the products**.
+🛒 **E-commerce:** Users can browse and purchase gym products like supplements and equipment. The product list is loaded dynamically using a JavaScript array, meaning the **Super User cannot 
+directly manage the products**.
 
 🏋️‍♂️ **Trainer Management:** Trainers can create and manage workout plans for trainees.
 
