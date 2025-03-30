@@ -1,11 +1,13 @@
 # **Track Tone - Gym Management System**
 
+---
 
 ### Overview
 Track Tone is a web-based gym management application that facilitates workout and diet management for trainees and trainers. It also includes an integrated e-commerce platform for gym-related products. The application offers separate logins for **Trainees, Trainers, and Super Users** to provide tailored features for each role.  
 
 🚫 **Note:** Payment integration is not yet included in this version.
 
+---
 
 ### Features
 ✅ **Browse Workout Plans:** Trainees can explore available workout and diet plans.
@@ -19,6 +21,7 @@ directly manage the products**.
 
 ⚙️ **Admin Dashboard:** Super Users can manage users and plans and access the Django admin dashboard.
 
+---
 
 ### Tech Stack
 - **Frontend:** HTML, CSS, JavaScript (React.js)
@@ -26,6 +29,7 @@ directly manage the products**.
 - **Database:** MySQL (using XAMPP)
 - **E-commerce:** JavaScript array for dynamic product loading
 
+---
 
 ### Installation
 #### Clone the repository:
@@ -73,6 +77,7 @@ http://127.0.0.1:8000/admin/
 ```
 and log in with the **superuser credentials** you just created.
 
+---
 
 ### Future Enhancements
 🔄 **Payment Integration:** Adding online payment options for seamless transactions.
@@ -85,10 +90,12 @@ and log in with the **superuser credentials** you just created.
 
 🔔 **Push Notifications:** Adding real-time alerts for workout updates, diet reminders, and purchase confirmations.
 
+---
 
 ### License
 This project is **open-source** and can be modified as needed.
 
+---
 
 ### Contributors
 👨‍💻 **Tejas R M** - Backend Developer, Database Integration  
