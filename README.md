@@ -77,6 +77,19 @@ and log in with the **superuser credentials** you just created.
 
 ---
 
+### Future Enhancements
+🔄 **Payment Integration:** Adding online payment options for seamless transactions.
+
+📲 **Mobile App Support:** Developing an Android/iOS app for better accessibility.
+
+📈 **Advanced Analytics:** Providing detailed insights for trainees, trainers, and super users.
+
+🏆 **Gamification Features:** Introducing achievement badges and reward systems for motivation.
+
+🔔 **Push Notifications:** Adding real-time alerts for workout updates, diet reminders, and purchase confirmations.
+
+----
+
 ### License
 This project is **open-source** and can be modified as needed.
 
